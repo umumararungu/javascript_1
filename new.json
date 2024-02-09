@@ -1,0 +1,18 @@
+[
+    {
+        "question":"how many countries in africa?",
+        "option":["57","52","61","54"],
+        "answer":"54"
+    },
+    {
+        "question":"which country code is 254?",
+        "option":["Nigeria","Kenya","Germany","Russia"],
+        "answer":"Kenya"
+    },
+    {
+        "question":"which popular communication we use in african countries?",
+        "option":["call","MTN","Airtel","WhatsApp"],
+        "answer":"WhatsApp"
+    }
+
+]

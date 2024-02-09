@@ -1,27 +1,6 @@
-const json_data = [
-    {
-        'question':"how many countries in africa?",
-        'option':["57","52","61","54"],
-        'answer':"54"
-    },
-    {
-        'question':"which country code is 254?",
-        'option':["Nigeria","Kenya","Germany","Russia"],
-        'answer':"Kenya"
-    },
-    {
-        'question':"which popular communication we use in african countries?",
-        'option':["call","MTN","Airtel","WhatsApp"],
-        'answer':"WhatsApp"
-    },
-
-]
-
-
 const fs = require('fs');
 const readline = require('readline');
-
-
+const json_data = JSON.parse(fs.readFileSync('new.json', 'utf8'));
 
 const rl = readline.createInterface({
     input: process.stdin,
