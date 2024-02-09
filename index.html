@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="images" class="images">
+        <div id="img" class="img">
+        </div>
+        <div class="button">
+            <button class="btn" onclick="change()">Get Dog</button>
+        </div>
+    </div>
+    <script>
+            const _div = document.getElementById("img")
+        function change(){
+
+        fetch('https://random.dog/woof.json')
+        .then(response => response.json())
+        .then((answer) => 
+        _div.innerHTML = `<img src="${answer.url}" >`)
+        .catch((_error) => console.log(_error))
+        }
+    
+      document.addEventListener.loading(change())
+    
+
+    </script>
+</body>
+</html>
